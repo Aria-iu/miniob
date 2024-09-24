@@ -1,3 +1,4 @@
+/*
 {
     // Use IntelliSense to learn about possible attributes.
     // Hover to view descriptions of existing attributes.
@@ -24,6 +25,21 @@
             "program": "${workspaceFolder}/${defaultBuildTask}/bin/observer",
             "args": ["-f", "${workspaceFolder}/etc/observer.ini", "-P", "cli"],
             "cwd": "${workspaceFolder}/${defaultBuildTask}/"
+        }
+    ]
+}
+*/
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "LLDB",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/bin/observer",
+            "args": ["-f", "${workspaceFolder}/etc/observer.ini", "-P", "cli"],
+            "cwd": "${workspaceFolder}/build/",
+            "console": "integratedTerminal"
         }
     ]
 }
